@@ -1,0 +1,38 @@
+﻿@model string
+@{
+    ViewBag.Title = "Person";
+}
+
+@section scripts{
+    <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+    <script src="/signalr/hubs"></script>
+    <script src="~/Content/app.js"></script>
+}
+
+<div class="fluent-container">
+    <div class="row">
+        <div class="col-xs-6">
+            <div id="hp"></div>
+        </div>
+
+        <div class="col-xs-6">
+            <div id="task-title"></div>
+            <div id="task-reward"></div>
+            <div>
+                <span id="task-progress"></span>/<span id="task-value"></span>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="meeting" class="row">
+        <div id="meeting-name" class="col-xs-12"></div>
+        <div id="meeting-progress" class="col-xs-12"></div>
+    </div>
+
+    <div id="log" class="row">
+    </div>
+</div>
+
+
+
